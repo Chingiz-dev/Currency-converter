@@ -1,3 +1,26 @@
+const leftResult = document.querySelector(".left-result");
+const rightResult = document.querySelector(".right-result");
+const dimmer = document.querySelector(".dimmer");
+const changer = document.querySelector(".arrows");
+const currencyForOneLeft = document.getElementById(
+  "currency-for-one-left-HTML"
+);
+const currencyForOneRight = document.getElementById(
+  "currency-for-one-right-HTML"
+);
+
+const amountInputLeft = document.getElementById("amount-input-left");
+const amountInputRight = document.getElementById("amount-input-right");
+
+const leftCurrencies = document.getElementsByName("left-currencies");
+const rightCurrencies = document.getElementsByName("right-currencies");
+
+const leftSelect = document.querySelector(".left-currency-select");
+const rightSelect = document.querySelector(".right-currency-select");
+
+
+
+
 const leftFunction = (data) => {
   //     console.log(data);
   //     console.log(base);
@@ -154,6 +177,7 @@ const swapSides = () => {
   });
 
   setCurrencies(currentLeftCurrencyName, currentRightCurrencyName);
+
   if (rightResult.style.display === "block") {
     showLeftInput();
     showRightAmount();
@@ -180,29 +204,10 @@ const showRightInput = () => {
 const changeOutputTextRight = () => {
   rightResult.innerText = (amountInputLeft.value * rateLeft).toFixed(4);
 };
+
 const changeOutputTextLeft = () => {
   leftResult.innerText = (amountInputRight.value * rateRight).toFixed(4);
 };
-
-const leftResult = document.querySelector(".left-result");
-const rightResult = document.querySelector(".right-result");
-const dimmer = document.querySelector(".dimmer");
-const changer = document.querySelector(".arrows");
-const currencyForOneLeft = document.getElementById(
-  "currency-for-one-left-HTML"
-);
-const currencyForOneRight = document.getElementById(
-  "currency-for-one-right-HTML"
-);
-
-const amountInputLeft = document.getElementById("amount-input-left");
-const amountInputRight = document.getElementById("amount-input-right");
-
-const leftCurrencies = document.getElementsByName("left-currencies");
-const rightCurrencies = document.getElementsByName("right-currencies");
-
-const leftSelect = document.querySelector(".left-currency-select");
-const rightSelect = document.querySelector(".right-currency-select");
 
 leftSelect.addEventListener("change", setLeftCurrency);
 rightSelect.addEventListener("change", setRightCurrency);
