@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="index.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Конвертер валют онлайн</title>
+</head>
+
+<body>
+    <header>
+        <div class="bank-logo"></div>
+        <div class="top-ref">
+            <a href="#" class="ref-to">Банк</a>
+            <a href="#" class="ref-to">Бизнес</a>
+            <a href="#" class="ref-to">Инвестиции</a>
+            <a href="#" class="ref-to">Страхование</a>
+            <a href="#" class="ref-to">Мобайл</a>
+            <a href="#" class="ref-to">Путешествия</a>
+            <a href="#" class="ref-to">Развлечения</a>
+        </div>
+        <div class="sign-in-button">Войти</div>
+    </header>
+    <main>
+        <h1 class="h1-text">Конвертер валют онлайн</h1>
+        <div class="three-blocks">
+            <div class="I-have">
+                <div>
+                    <p>У меня есть</p>
+                </div>
+                <div class="currency-selectors">
+                    <input type="radio" id="currency-left1" name="left-currencies" value="RUB" checked>
+                    <label for="currency-left1">RUB</label>
+                    <input type="radio" id="currency-left2" name="left-currencies" value="USD">
+                    <label for="currency-left2">USD</label>
+                    <input type="radio" id="currency-left3" name="left-currencies" value="EUR">
+                    <label for="currency-left3">EUR</label>
+                    <input type="radio" id="currency-left4" name="left-currencies" value="GBP">
+                    <label for="currency-left4">GBP</label>
+                    <select class="left-currency-select">
+                        <option value="CNY">CNY</option>
+                        <option value="MXN">MXN</option>
+                        <option value="ISK">ISK</option>
+                        <option value="KRW">KRW</option>
+                        <option value="HKD">HKD</option>
+                        <option value="CZK">CZK</option>
+                        <option value="BGN">BGN</option>
+                        <option value="BRL">BRL</option>
+                        <option value="IDR">IDR</option>
+                        <option value="SGD">SGD</option>
+                        <option value="PHP">PHP</option>
+                        <option value="RON">RON</option>
+                        <option value="HUF">HUF</option>
+                        <option value="CHF">CHF</option>
+                        <option value="NOK">NOK</option>
+                        <option value="CAD">CAD</option>
+                        <option value="MYR">MYR</option>
+                        <option value="ILS">ILS</option>
+                        <option value="THB">THB</option>
+                        <option value="SEK">SEK</option>
+                        <option value="NZD">NZD</option>
+                        <option value="AUD">AUD</option>
+                        <option value="DKK">DKK</option>
+                        <option value="HRK">HRK</option>
+                        <option value="PLN">PLN</option>
+                        <option value="TRY">TRY</option>
+                        <option value="INR">INR</option>
+                        <option value="ZAR">ZAR</option>
+                        <option value="JPY">JPY</option>
+                    </select>
+
+                </div>
+                <div class="numbers-n-text">
+                    <input type="number" id="amount-input-left" placeholder="1">
+                    <div class="left-result"></div>
+                    <div id="currency-for-one-left-HTML" class="currency-for-one"></div>
+                </div>
+
+            </div>
+
+            <div class="arrows">&#8644;
+
+            </div>
+
+            <div class="I-want">
+                <div>
+                    <p>Хочу приобрести</p>
+                </div>
+                <div class="currency-selectors">
+                    <input type="radio" id="currency-right1" name="right-currencies" value="RUB">
+                    <label for="currency-right1">RUB</label>
+                    <input type="radio" id="currency-right2" name="right-currencies" value="USD" checked>
+                    <label for="currency-right2">USD</label>
+                    <input type="radio" id="currency-right3" name="right-currencies" value="EUR">
+                    <label for="currency-right3">EUR</label>
+                    <input type="radio" id="currency-right4" name="right-currencies" value="GBP">
+                    <label for="currency-right4">GBP</label>
+                    <select class="right-currency-select">
+                        <option value="CNY">CNY</option>
+                        <option value="MXN">MXN</option>
+                        <option value="ISK">ISK</option>
+                        <option value="KRW">KRW</option>
+                        <option value="HKD">HKD</option>
+                        <option value="CZK">CZK</option>
+                        <option value="BGN">BGN</option>
+                        <option value="BRL">BRL</option>
+                        <option value="IDR">IDR</option>
+                        <option value="SGD">SGD</option>
+                        <option value="PHP">PHP</option>
+                        <option value="RON">RON</option>
+                        <option value="HUF">HUF</option>
+                        <option value="CHF">CHF</option>
+                        <option value="NOK">NOK</option>
+                        <option value="CAD">CAD</option>
+                        <option value="MYR">MYR</option>
+                        <option value="ILS">ILS</option>
+                        <option value="THB">THB</option>
+                        <option value="SEK">SEK</option>
+                        <option value="NZD">NZD</option>
+                        <option value="AUD">AUD</option>
+                        <option value="DKK">DKK</option>
+                        <option value="HRK">HRK</option>
+                        <option value="PLN">PLN</option>
+                        <option value="TRY">TRY</option>
+                        <option value="INR">INR</option>
+                        <option value="ZAR">ZAR</option>
+                        <option value="JPY">JPY</option>
+                    </select>
+                </div>
+
+                <div class="numbers-n-text">
+                    <input type="number" id="amount-input-right" placeholder="0">
+                    <div class="right-result"></div>
+                    <div id="currency-for-one-right-HTML" class="currency-for-one"></div>
+                </div>
+
+            </div>
+        </div>
+
+    </main>
+<div class="dimmer"><div class="loading">Loading</div></div>
+</body>
+
+</html>

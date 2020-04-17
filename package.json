@@ -1,0 +1,31 @@
+{
+  "name": "chingiz-m4",
+  "version": "0.0.1",
+  "description": "online currency converter",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "build": "webpack",
+    "build:prod": "webpack --config webpack.prod.config.js",
+    "prettier:fix": "prettier \"index.js\" --write",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Chingiz-dev/Chingiz-M4.git"
+  },
+  "author": "Chingiz Shigayev",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Chingiz-dev/Chingiz-M4/issues"
+  },
+  "homepage": "https://github.com/Chingiz-dev/Chingiz-M4#readme",
+  "devDependencies": {
+    "@babel/core": "^7.9.0",
+    "@babel/preset-env": "^7.9.5",
+    "babel-loader": "^8.1.0",
+    "prettier": "^2.0.4",
+    "webpack": "^4.42.1",
+    "webpack-cli": "^3.3.11"
+  }
+}
