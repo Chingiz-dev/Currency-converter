@@ -1,5 +1,3 @@
-https://chingiz-dev.github.io/Chingiz-M4/
+https://chingiz-dev.github.io/Currency-converter/
 
-
-# Chingiz-M4
-M4 project
+# Real time currency converter
